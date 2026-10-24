@@ -42,7 +42,7 @@ int main()
 
     while (1){
         if (kbhit()){
-            t = getch();
+            t = getch(); //ham getch nhan du lieu tu ban phim
             if (t=='a') Huong = 2;
             if (t=='w') Huong = 3;
             if (t=='d') Huong = 0;
