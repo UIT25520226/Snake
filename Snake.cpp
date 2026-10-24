@@ -41,17 +41,18 @@ int main()
     char t;
 
     while (1){
-        if (kbhit()){
-            t = getch(); //ham getch nhan du lieu tu ban phim
+        if (_kbhit()){
+            t = _getch(); //ham getch nhan du lieu tu ban phim
             if (t=='a') Huong = 2;
             if (t=='w') Huong = 3;
             if (t=='d') Huong = 0;
-            if (t=='x') Huong = 1;
+            if (t=='s') Huong = 1;
+            if (t == 'q') break;
         }
         system("cls");
         r.Ve();
         r.DiChuyen(Huong);
-        Sleep(300);
+        Sleep(500);
     }
 
     return 0;
